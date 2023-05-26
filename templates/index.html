@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sanskrit Flash Cards</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row mt-12 button-container">
+        <div class="col-md-6">
+            <button class="btn btn-primary btn-block btn-lg" id="letter-button" onclick="generateEntry()">Letter
+            </button>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-secondary btn-block btn-lg" id="word-meaning-button" onclick="showWordMeaning()">Word
+                Meaning
+            </button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div id="text-container">
+        <h1 id="letter" class="font-weight-bold"></h1>
+        <h2 id="word" class="display-1"></h2>
+        <h3 id="desc" class="display-1"></h3>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="static/js/script.js"></script>
+</body>
+</html>
